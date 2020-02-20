@@ -1,0 +1,60 @@
+﻿@model FamousPortal.Models.Meal
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Meal</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mealId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mealId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.categoryId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.categoryId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mealName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mealName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mealPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mealPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mealDescription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mealDescription)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nutritionValues)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nutritionValues)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.available)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.available)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
